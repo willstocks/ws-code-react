@@ -1,0 +1,141 @@
+@import "_variables";
+
+.home {
+    max-width: calc(100% - 10em);
+    margin: 0 auto;
+}
+
+#header {
+    padding: 3em 0 3em 0;
+    text-align: center;
+    width: calc(100% + 10em);
+    margin: 0 -5em;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+	
+	&:after {
+		content: "";
+		background-image: url(/will-stocks-profile.jpeg);
+		opacity: .35;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: 0;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.content {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		
+		.logo {
+			display: block;
+			margin: 0 auto 1.5em auto;
+			max-width: 75px;
+			z-index: 2;
+			position: relative;
+		}
+	}
+}
+
+#header h1 {
+    margin: 0 0 .25em 0;
+	z-index: 2;
+}
+
+#header p {
+    font-size: 1.25em;
+    letter-spacing: -.025em;
+	margin: 0 0 2em 0;
+	position: relative;
+	z-index: 2;
+}
+
+.container {
+    display: flex;
+	flex-wrap: wrap;
+	background: #fff;
+	padding: 4em 4em 4em 4em;
+	border-radius: $stdrad;
+	border: 1px solid $lightgray;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 5em 0;
+}
+
+.card {
+    margin: 0 10px;
+    flex: 1;
+	border: 1px solid $lightgray;
+	border-radius: $stdrad;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);	
+	
+	&.gradient-box {
+		border: double 1px transparent;
+		border-radius: $stdrad;
+		background-image: linear-gradient(white, white), radial-gradient(circle at top left, $primary, $secondary);
+		background-origin: border-box;
+		background-clip: content-box, border-box;
+	}
+	
+	&.reverse-gradient-box {
+		border: double 1px transparent;
+		border-radius: $stdrad;
+		background-image: linear-gradient(white, white), radial-gradient(circle at top left, $secondary, $primary);
+		background-origin: border-box;
+		background-clip: content-box, border-box;
+	}
+}
+
+.card h2 {
+    text-align: center;
+    border-bottom: 1px solid;
+	border-image-slice: 1;
+    padding-bottom: .83em;
+    margin-block-end: 0;
+}
+
+.card.gradient-box h2 {
+	border-image-source: linear-gradient(45deg, $primary,$secondary);
+}
+
+.card.reverse-gradient-box h2 {
+	border-image-source: linear-gradient(45deg, $secondary, $primary);
+}
+
+.card .content {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 1.25em 0;
+}
+
+.chart {
+	flex: 1;
+	margin: 0 2.5em;
+	
+	div{
+		max-height: 100px;
+		max-width: 100px;
+		text-align: center;
+	}
+	
+	h3 {
+		text-align: center;
+		margin-top: 2em;
+		max-width: 100px;
+	}
+}
+
+.charts h2 {
+    flex-basis: 100%;
+    margin-block-start: 0em;
+    margin-block-end: 1.5em;
+}

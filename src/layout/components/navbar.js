@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="navbar">
 		<div className="branding">
-			<img src={ logo } className="logo" />
+			<img src={ logo } className="logo" alt="Logo" />
 		</div>
 		<div className="links">
 			<NavLink exact to="/" className="link" activeClassName="active">Home</NavLink>
