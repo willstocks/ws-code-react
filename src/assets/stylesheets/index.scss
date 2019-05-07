@@ -1,25 +1,49 @@
+$primary: #f16c20;
+$secondary: #e14fad;
+$lightgray: #ccc;
+$darkgray: #777;
+
+
 html,
 body{
     margin: 0;
     padding: 0;
     font-size: 14px;
-    font-family: -apple-system, sans-serif;
-    color: #111;
+    font-family: sans-serif;
+    color: #000;
     background-color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     font-weight: 300;
 }
 
+.app {
+  width: 100%;
+}
+
+.navbar {
+    height: 70px;
+	display: flex;
+    border-bottom: 1px solid $lightgray;
+}
+
+.branding,
+.comingsoon {
+    flex: 1;
+}
+
+.branding .logo {
+	height: 50px;
+	margin: 10px 0;
+}
+
 .links{
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
+	flex: 2;
+    margin-bottom: 25px;
+	margin-top: 25px;
+	text-align: center;
     
 	.link{
         color: #333;
+		font-size: 16px;
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
@@ -32,12 +56,22 @@ body{
 }
 
 .link.active{
-    color: #000;
+    color: $primary;
     text-decoration: underline;
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.footer .logo {
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copyright {
+    display: inline-block;
+    vertical-align: middle;
 }

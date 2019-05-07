@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import logo from 'assets/images/logo.svg';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from 'layout/views/home';
@@ -16,17 +14,18 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <div>
+                <div className="app">
                     <Navbar />
-					<div className="views">
+					<div className="view">
 						<Switch>
 							<Route exact path="/" component={ Home }/>
 							<Route path="/about" component={ About }/>
 							<Route path="/contact" component={ Contact }/>
 							<Route render={ () => <h1>404 Error</h1> } />
 						</Switch>
-					</div>
-                </div>
+					</div> {/* view */}
+					<Footer />
+                </div> {/* app */}
             </Router>
         );
     }

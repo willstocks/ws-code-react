@@ -4,10 +4,11 @@ import logo from 'assets/images/logo.svg';
 
 function Footer() {
   return (
-    <div>
-		<footer className="footer">
-			<img src={logo} className="footer-logo" alt="logo" />
-			<p>© 2019 Will Stocks</p>
+    <div className="footer">
+		<footer>
+			<img src={logo} className="logo" alt="logo" />
+			<p className="copyright">© 2019 Will Stocks</p>
+			<img src={logo} className="logo" alt="logo" />
 		</footer>
     </div>
   );
