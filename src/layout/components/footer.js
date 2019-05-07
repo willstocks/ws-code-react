@@ -1,14 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../images/logo.svg';
+import '../../stylesheets/App.css';
 
-function App() {
+function Home() {
   return (
+	<nav className="navigation">
+		<ul>
+			<a href='/'>Home</a>
+			<a href='/about'>About</a>
+			<a href='/contact'>Contact</a>
+		</ul>
+	</nav>
+	
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Home page
         </p>
         <a
           className="App-link"
@@ -23,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
