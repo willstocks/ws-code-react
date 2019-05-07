@@ -118,19 +118,19 @@
 }
 
 .chart {
-	flex: 1;
+	flex: 1 1 100px;
 	margin: 0 2.5em;
 	
 	div{
 		max-height: 100px;
 		max-width: 100px;
 		text-align: center;
+		margin: auto;
 	}
 	
 	h3 {
 		text-align: center;
 		margin-top: 2em;
-		max-width: 100px;
 	}
 }
 
