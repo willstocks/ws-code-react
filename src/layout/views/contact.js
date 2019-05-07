@@ -1,24 +1,11 @@
 import React from 'react';
-import logo from '../../images/logo.svg';
-import '../../stylesheets/App.css';
+//import logo from 'assets/images/logo.svg';
+//import '../../stylesheets/App.css';
 
 function Contact() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Contact Page
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <div className="contact">
+		<h1>Contact</h1>
     </div>
   );
 }

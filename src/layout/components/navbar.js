@@ -1,34 +1,18 @@
 import React from 'react';
-import logo from '../../images/logo.svg';
-import '../../stylesheets/App.css';
+import { NavLink } from 'react-router-dom';
+//import logo from '../../images/logo.svg';
+//import '../../stylesheets/App.css';
 
-function Home() {
+function Navbar() {
   return (
-	<nav className="navigation">
-		<ul>
-			<a href='/'>Home</a>
-			<a href='/about'>About</a>
-			<a href='/contact'>Contact</a>
-		</ul>
-	</nav>
-	
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Home page
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+		<nav className="navbar links">
+				<NavLink exact to="/" className="link" activeClassName="active">Home</NavLink>
+				<NavLink to="/about" className="link">About</NavLink>
+				<NavLink to="/contact" className="link">Contact Me</NavLink>
+		</nav>
     </div>
   );
 }
 
-export default Home;
+export default Navbar;
