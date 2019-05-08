@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/navbar';
+import Navbar from 'layout/components/navbar';
 import Home from 'layout/views/home';
 import About from 'layout/views/about';
 import Contact from 'layout/views/contact';
-import Footer from './components/footer';
+import Footer from 'layout/components/footer';
 
 
 class App extends React.Component {
