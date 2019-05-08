@@ -21,7 +21,7 @@ class App extends React.Component {
 							<Route exact path="/" component={ Home }/>
 							<Route path="/about" component={ About }/>
 							<Route path="/contact" component={ Contact }/>
-							<Route render={ () => <h1>404 Error</h1> } />
+							{/* <Route render={ () => <h1>404 Error</h1> } />*/}
 						</Switch>
 					</div> {/* view */}
 					<Footer />
