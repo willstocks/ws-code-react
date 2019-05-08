@@ -1,6 +1,10 @@
 import React from 'react';
 import 'assets/stylesheets/home.scss';
 import PieChart from 'react-minimal-pie-chart';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+import Timeline from 'layout/components/timeline';
+
 
 function Home() {
   return (
@@ -12,15 +16,25 @@ function Home() {
 			</div>
 		</header>
 		<section className="container sites">
-			<div className="card gradient-box">
-				<h2>willstocks.co.uk</h2>
-				<p className="content">A technology review blog, geared towards consumer/prosumer products</p>
-			</div> {/* card */}
-			<div className="card reverse-gradient-box">
-				<h2>code.willstocks.co.uk</h2>
-				<p className="content">A blog designated to documenting my learnings as I explore more of the world of web development</p>
-			</div> {/* card */}
-		</section> {/* container */}
+		
+			<ScrollAnimation animateIn="slideInLeft">
+				<div className="card gradient-box">
+					<h2>willstocks.co.uk</h2>
+					<p className="content">A technology review blog, geared towards consumer/prosumer products</p>
+				</div> {/* card */}
+			</ScrollAnimation> {/* slideInLeft */}
+			
+			<ScrollAnimation animateIn="slideInRight">
+				<div className="card reverse-gradient-box">
+					<h2>code.willstocks.co.uk</h2>
+					<p className="content">A blog designated to documenting my learnings as I explore more of the world of web development</p>
+				</div> {/* card */}
+			</ScrollAnimation> {/* slideInRight */}
+
+		</section> {/* sites container */}
+		
+		<Timeline />
+		
 		<section className="container charts">
 			<h2>Skillset</h2>
 			<div className="chart tea">
@@ -118,7 +132,7 @@ function Home() {
 				/>
 				<h3>PHP</h3>
 			</div>
-		</section>
+		</section>  {/* charts container */}
 
     </div>
   );

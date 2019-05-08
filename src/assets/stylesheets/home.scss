@@ -68,7 +68,12 @@
 	border: 1px solid $lightgray;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	margin: 5em 0;
+	overflow: hidden;
 }
+
+	.sites .animated {
+		flex: 1 0;
+	}
 
 .card {
     margin: 0 10px;
@@ -76,6 +81,7 @@
 	border: 1px solid $lightgray;
 	border-radius: $stdrad;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);	
+	height: 100%;
 	
 	&.gradient-box {
 		border: double 1px transparent;
@@ -139,3 +145,21 @@
     margin-block-start: 0em;
     margin-block-end: 1.5em;
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 3em;
+    }
+	.card {
+		height: 200px;
+		
+		&.reverse-gradient-box {
+			margin-top: 1.5em;
+		}
+	}
+	.card h2 {
+		word-break: break-word;
+		padding: 0 .4em .83em;
+	}
+}
+
