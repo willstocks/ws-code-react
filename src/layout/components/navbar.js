@@ -12,7 +12,7 @@ function Navbar() {
 		<div className="links">
 			<NavLink exact to="/" className="link" activeClassName="active">Home</NavLink>
 			<NavLink to="/about" className="link">About</NavLink>
-			<NavLink to="/contact" className="link">Contact Me</NavLink>
+			<NavLink to="/contact" className="link">Contact</NavLink>
 		</div>
 		<div className="comingsoon">
 		</div>
