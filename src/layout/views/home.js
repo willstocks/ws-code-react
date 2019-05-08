@@ -1,10 +1,10 @@
 import React from 'react';
 import 'assets/stylesheets/home.scss';
+import Card from 'layout/components/card';
 import PieChart from 'react-minimal-pie-chart';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import Timeline from 'layout/components/timeline';
-
 
 function Home() {
   return (
@@ -13,24 +13,23 @@ function Home() {
 			<div className="content">
 				<img src="https://code.willstocks.co.uk/themes/zwiebl-zwiebl_stellar/assets/images/Will Stocks - Logo.png" className="logo" alt="Logo" />
 				<p>Tech reviewer, IT professional & avid blogger.</p>
-			</div>
+			</div> {/* Header Content */}
 		</header>
 		<section className="container sites">
-		
 			<ScrollAnimation animateIn="slideInLeft">
-				<div className="card gradient-box">
-					<h2>willstocks.co.uk</h2>
-					<p className="content">A technology review blog, geared towards consumer/prosumer products</p>
-				</div> {/* card */}
+				<Card 
+					header="willstocks.co.uk"
+					content="A technology review blog, geared towards consumer/prosumer products"
+					extraStyles="gradient-box"
+				/>
 			</ScrollAnimation> {/* slideInLeft */}
-			
 			<ScrollAnimation animateIn="slideInRight">
-				<div className="card reverse-gradient-box">
-					<h2>code.willstocks.co.uk</h2>
-					<p className="content">A blog designated to documenting my learnings as I explore more of the world of web development</p>
-				</div> {/* card */}
+				<Card 
+					header="Web Dev Blog"
+					content="A blog designated to documenting my learnings as I explore more of the world of web development"
+					extraStyles="reverse-gradient-box"
+				/>
 			</ScrollAnimation> {/* slideInRight */}
-
 		</section> {/* sites container */}
 		
 		<Timeline />
@@ -55,7 +54,7 @@ function Home() {
 					animate
 				/>
 				<h3>Tea Drinking</h3>
-			</div>
+			</div> {/* Tea Chart */ }
 			<div className="chart html">
 				<PieChart
 					data={[{
@@ -74,7 +73,7 @@ function Home() {
 					animate
 				/>
 				<h3>HTML</h3>
-			</div>
+			</div> {/* HTML Chart */ }
 			<div className="chart css">
 				<PieChart
 					data={[{
@@ -93,7 +92,7 @@ function Home() {
 					animate
 				/>
 				<h3>CSS</h3>
-			</div>
+			</div> {/* CSS Chart */ }
 			<div className="chart js">
 				<PieChart
 					data={[{
@@ -112,7 +111,7 @@ function Home() {
 					animate
 				/>
 				<h3>Javascript</h3>
-			</div>
+			</div> {/* JS Chart */ }
 			<div className="chart php">
 				<PieChart
 					data={[{
@@ -131,7 +130,7 @@ function Home() {
 					animate
 				/>
 				<h3>PHP</h3>
-			</div>
+			</div> {/* PHP Chart */ }
 		</section>  {/* charts container */}
 
     </div>
