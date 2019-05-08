@@ -32,7 +32,10 @@ function Home() {
 			</ScrollAnimation> {/* slideInRight */}
 		</section> {/* sites container */}
 		
-		<Timeline />
+		<section className="container noshadow timeline">
+			<Timeline />
+		</section> {/* timeline container */}
+
 		
 		<section className="container charts">
 			<h2>Skillset</h2>
