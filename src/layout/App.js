@@ -8,25 +8,21 @@ import Footer from 'layout/components/footer';
 
 
 class App extends React.Component {
-    constructor() {
-        super();
-    }
     render() {
         return (
-            <Router>
-                <div className="app">
-                    <Navbar />
+			<div className="app">
+				<Router>
+					<Navbar />
 					<div className="view">
 						<Switch>
 							<Route exact path="/" component={ Home }/>
 							<Route path="/about" component={ About }/>
 							<Route path="/contact" component={ Contact }/>
-							{/* <Route render={ () => <h1>404 Error</h1> } />*/}
 						</Switch>
-					</div> {/* view */}
+					</div> {/* view */}           
 					<Footer />
-                </div> {/* app */}
-            </Router>
+				</Router>
+			</div>
         );
     }
 }
