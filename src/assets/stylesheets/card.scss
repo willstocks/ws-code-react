@@ -5,7 +5,7 @@
     flex: 1;
 	border: 1px solid $lightgray;
 	border-radius: $stdrad;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);	
+	box-shadow: $stdshad;	
 	height: 100%;
 	
 	h2 {

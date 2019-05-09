@@ -13,6 +13,7 @@
     height: 500px;
     position: relative;
     z-index: 2;
+	overflow: hidden;
 	
 	&:after {
 		content: "";
@@ -67,7 +68,7 @@
 	padding: 4em 4em 4em 4em;
 	border-radius: $stdrad;
 	border: 1px solid $lightgray;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: $stdshad;
 	margin: 5em 0;
 	overflow: hidden;
 	

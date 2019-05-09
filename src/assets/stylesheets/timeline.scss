@@ -1,3 +1,5 @@
+@import "_variables";
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -45,7 +47,7 @@
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: $stdshad;
 }
 
 /* Place the container to the left */
@@ -97,7 +99,7 @@
   background-color: white;
   position: relative;
   border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: $stdshad;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
