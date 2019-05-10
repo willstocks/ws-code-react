@@ -89,29 +89,6 @@
 	flex: 1 0;
 }
 
-.chart {
-	flex: 1 1 100px;
-	margin: 0 2.5em;
-	
-	div{
-		max-height: 100px;
-		max-width: 100px;
-		text-align: center;
-		margin: auto;
-	}
-	
-	h3 {
-		text-align: center;
-		margin-top: 2em;
-	}
-}
-
-.charts h2 {
-    flex-basis: 100%;
-    margin-block-start: 0em;
-    margin-block-end: 1.5em;
-}
-
 @media screen and (max-width: 480px) {
     .container {
         padding: 3em;
