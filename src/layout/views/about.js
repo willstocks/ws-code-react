@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function About() {
   return (
-		<div className="about">
-			<h1>ABOUT</h1>
-		</div>
+    <div className='about'>
+      <h1>ABOUT</h1>
+    </div>
   );
 }
 

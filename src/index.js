@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './layout/App';
-import './assets/stylesheets/index.scss';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./layout/App";
+import "./assets/stylesheets/index.scss";
 //import * as serviceWorker from './serviceWorker';
 
 // If you want your app to work offline and load faster, you can change
@@ -9,4 +9,4 @@ import './assets/stylesheets/index.scss';
 // Learn more about service workers: https://bit.ly/CRA-PWA
 //serviceWorker.unregister();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
