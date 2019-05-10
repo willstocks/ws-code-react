@@ -43,7 +43,7 @@ function Home() {
 				<Timeline />
 			</section> {/* timeline container */}
 
-			<InView>
+			<InView threshold="0.5">
 				{({ inView, ref }) => (
 					<div ref={ref}>
 						<Pies
