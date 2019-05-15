@@ -9,14 +9,14 @@ import Footer from "layout/components/footer";
 class App extends React.Component {
   render() {
     return (
-      <div className='app'>
+      <div className="app">
         <Router>
           <Navbar />
-          <div className='view'>
+          <div className="view">
             <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/contact' component={Contact} />
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
             </Switch>
           </div>
           {/* view */}

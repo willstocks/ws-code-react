@@ -3,12 +3,12 @@ import PieChart from "react-minimal-pie-chart";
 import "assets/stylesheets/pies.scss";
 
 function Pies(props) {
-  let pierender = props.inview ? 100 : 0;
+  const pierender = props.inview ? 100 : 0;
 
   return (
-    <section className='container charts'>
+    <section className="container charts">
       <h2>Skillset</h2>
-      <div className='chart tea'>
+      <div className="chart tea">
         <PieChart
           data={[
             {
@@ -29,9 +29,9 @@ function Pies(props) {
           reveal={pierender}
         />
         <h3>Tea Drinking</h3>
-      </div>{" "}
+      </div>
       {/* Tea Chart */}
-      <div className='chart html'>
+      <div className="chart html">
         <PieChart
           data={[
             {
@@ -52,9 +52,9 @@ function Pies(props) {
           reveal={pierender}
         />
         <h3>HTML</h3>
-      </div>{" "}
+      </div>
       {/* HTML Chart */}
-      <div className='chart css'>
+      <div className="chart css">
         <PieChart
           data={[
             {
@@ -75,9 +75,9 @@ function Pies(props) {
           reveal={pierender}
         />
         <h3>CSS</h3>
-      </div>{" "}
+      </div>
       {/* CSS Chart */}
-      <div className='chart js'>
+      <div className="chart js">
         <PieChart
           data={[
             {
@@ -98,9 +98,9 @@ function Pies(props) {
           reveal={pierender}
         />
         <h3>Javascript</h3>
-      </div>{" "}
+      </div>
       {/* JS Chart */}
-      <div className='chart php'>
+      <div className="chart php">
         <PieChart
           data={[
             {
@@ -121,7 +121,7 @@ function Pies(props) {
           reveal={pierender}
         />
         <h3>PHP</h3>
-      </div>{" "}
+      </div>
       {/* PHP Chart */}
     </section>
   );
