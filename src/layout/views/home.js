@@ -22,7 +22,7 @@ function Home() {
         {/* Header Content */}
       </header>
       <section className="container sites">
-        <ScrollAnimation animateIn="slideInLeft">
+        <ScrollAnimation animateIn="slideInLeft" animateOnce>
           <Card
             header="Main Blog"
             content="A technology review blog, geared towards consumer / prosumer products"
@@ -30,7 +30,7 @@ function Home() {
           />
         </ScrollAnimation>
         {/* slideInLeft */}
-        <ScrollAnimation animateIn="slideInRight">
+        <ScrollAnimation animateIn="slideInRight" animateOnce>
           <Card
             header="Web Dev Blog"
             content="A blog designated to documenting my learnings as I explore more of the world of web development"
