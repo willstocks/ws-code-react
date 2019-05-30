@@ -97,7 +97,7 @@ function Pies(props) {
           animate
           reveal={pierender}
         />
-        <h3>Javascript</h3>
+        <h3>JS</h3>
       </div>
       {/* JS Chart */}
       <div className="chart php">
