@@ -52,8 +52,8 @@
 
 @media screen and (max-width: 480px) {
   .card {
-    height: 200px;
-
+    height: auto;
+    
     &.reverse-gradient-box {
       margin-top: 1.5em;
     }
