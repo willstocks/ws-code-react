@@ -10,10 +10,40 @@ function Timeline() {
       <Media query={{ maxWidth: 600 }}>
         {matches =>
           matches ? (
-            <ScrollAnimation
-              animateIn="slideInRight"
-              animateOut="slideOutRight"
-            >
+            <ScrollAnimation animateIn="slideInRight" animateOnce>
+              <div className="date left">
+                <div className="content">
+                  <h2>2019</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+            </ScrollAnimation>
+          ) : (
+            <ScrollAnimation animateIn="slideInLeft" animateOnce>
+              <div className="date left">
+                <div className="content">
+                  <h2>2019</h2>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+            </ScrollAnimation>
+          )
+        }
+      </Media>
+
+      <ScrollAnimation animateIn="slideInRight" animateOnce>
+        <div className="date right">
+          <div className="content">
+            <h2>2018</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      </ScrollAnimation>
+
+      <Media query={{ maxWidth: 600 }}>
+        {matches =>
+          matches ? (
+            <ScrollAnimation animateIn="slideInRight" animateOnce>
               <div className="date left">
                 <div className="content">
                   <h2>2017</h2>
@@ -22,7 +52,7 @@ function Timeline() {
               </div>
             </ScrollAnimation>
           ) : (
-            <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft">
+            <ScrollAnimation animateIn="slideInLeft" animateOnce>
               <div className="date left">
                 <div className="content">
                   <h2>2017</h2>
@@ -33,15 +63,6 @@ function Timeline() {
           )
         }
       </Media>
-
-      <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight">
-        <div className="date right">
-          <div className="content">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-      </ScrollAnimation>
     </div>
   );
 }
