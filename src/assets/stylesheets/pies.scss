@@ -3,6 +3,8 @@
 .chart {
   flex: 1 1 100px;
   margin: 0 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
 
   div {
     max-height: 100px;
@@ -13,7 +15,7 @@
 
   h3 {
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
   }
 
   &:nth-child(even) {
@@ -39,4 +41,16 @@
   flex-basis: 100%;
   margin-block-start: 0em;
   margin-block-end: 1.5em;
+}
+
+@media screen and (max-width: 360px) {
+  .chart {
+    width: 64px;
+  } 
+}
+
+@media screen and (max-width: 480px) and (min-width: 361px) {
+  .chart {
+    width: 115px;
+  } 
 }
