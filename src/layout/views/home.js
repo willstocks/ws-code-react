@@ -24,8 +24,8 @@ function Home() {
       <section className="container sites">
         <ScrollAnimation animateIn="slideInLeft">
           <Card
-            header="willstocks.co.uk"
-            content="A technology review blog, geared towards consumer/prosumer products"
+            header="Main Blog"
+            content="A technology review blog, geared towards consumer / prosumer products"
             extraStyles="gradient-box"
           />
         </ScrollAnimation>
