@@ -1,97 +1,96 @@
 @import "_variables";
 
 .home {
-    max-width: calc(100% - 10em);
-    margin: 0 auto;
+  max-width: calc(100% - 10em);
+  margin: 0 auto;
 }
 
 #header {
-    padding: 3em 0 3em 0;
-    text-align: center;
-    width: calc(100% + 10em);
-    margin: 0 -5em;
-    height: 500px;
+  padding: 3em 0 3em 0;
+  text-align: center;
+  width: calc(100% + 10em);
+  margin: 0 -5em;
+  height: 500px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    background-image: url(./../images/will-stocks-profile.jpeg);
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    background-attachment: fixed;
+    background-position: 100% 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+  }
+
+  .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    .logo {
+      display: block;
+      margin: 0 auto 1.5em auto;
+      max-width: 75px;
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  h1 {
+    margin: 0 0 0.25em 0;
+    z-index: 2;
+  }
+
+  p {
+    font-size: 1.25em;
+    letter-spacing: -0.025em;
+    margin: 0 0 2em 0;
     position: relative;
     z-index: 2;
-	overflow: hidden;
-	
-	&:after {
-		content: "";
-		background-image: url(./../images/will-stocks-profile.jpeg);
-		opacity: .35;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		position: absolute;
-		z-index: 0;
-		background-attachment: fixed;
-		background-position: 100% 33%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		filter: blur(3px);
-	}
-	
-	.content {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		z-index: 2;
-		
-		.logo {
-			display: block;
-			margin: 0 auto 1.5em auto;
-			max-width: 75px;
-			z-index: 2;
-			position: relative;
-		}
-	}
-	
-	h1 {
-		margin: 0 0 .25em 0;
-		z-index: 2;
-	}
-	
-	p {
-		font-size: 1.25em;
-		letter-spacing: -.025em;
-		margin: 0 0 2em 0;
-		position: relative;
-		z-index: 2;
-	}
+  }
 }
 
 .container {
-    display: flex;
-	flex-wrap: wrap;
-	background: #fff;
-	padding: 4em 4em 4em 4em;
-	border-radius: $stdrad;
-	border: 1px solid $lightgray;
-	box-shadow: $stdshad;
-	margin: 5em 0;
-	overflow: hidden;
-	
-	&.timeline {
-		display: block;
-	}
-	
-	&.noshadow {
-		background: none;
-		border: none;
-		box-shadow: none;
-		padding: 4em 0;
-		overflow: visible;
-	}
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 4em 4em 4em 4em;
+  border-radius: $stdrad;
+  border: 1px solid $lightgray;
+  box-shadow: $stdshad;
+  margin: 5em 0;
+  overflow: hidden;
+
+  &.timeline {
+    display: block;
+  }
+
+  &.noshadow {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 4em 0;
+    overflow: visible;
+  }
 }
 
 .sites .animated {
-	flex: 1 0;
+  flex: 1 0;
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        padding: 3em;
-    }
+  .container {
+    padding: 3em;
+  }
 }
-

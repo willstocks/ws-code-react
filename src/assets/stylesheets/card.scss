@@ -1,80 +1,81 @@
 @import "_variables";
 
 .card {
-    margin: 0 10px;
-    flex: 1;
-	border: 1px solid $lightgray;
-	border-radius: $stdrad;
-	box-shadow: $stdshad;	
-	height: 100%;
-	
-	h2 {
-		text-align: center;
-		border-bottom: 1px solid;
-		border-image-slice: 1;
-		padding-bottom: .83em;
-		margin-block-end: 0;
-	}
-	
-	&.gradient-box {
-		border: double 1px transparent;
-		border-radius: $stdrad;
-		background-image: linear-gradient(white, white), radial-gradient(circle at top left, $primary, $secondary);
-		background-origin: border-box;
-		background-clip: content-box, border-box;
-		
-		h2 {
-			border-image-source: linear-gradient(45deg, $primary,$secondary);
-		}
-	}
-	
-	&.reverse-gradient-box {
-		border: double 1px transparent;
-		border-radius: $stdrad;
-		background-image: linear-gradient(white, white), radial-gradient(circle at top left, $secondary, $primary);
-		background-origin: border-box;
-		background-clip: content-box, border-box;
-		
-		h2 {
-			border-image-source: linear-gradient(45deg, $secondary, $primary);
+  margin: 0 10px;
+  flex: 1;
+  border: 1px solid $lightgray;
+  border-radius: $stdrad;
+  box-shadow: $stdshad;
+  height: 100%;
 
-		}
-	}
-	
-	.content {
-		text-align: center;
-		width: 90%;
-		margin: auto;
-		padding: 1.25em 0;
-	}
+  h2 {
+    text-align: center;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    padding-bottom: 0.83em;
+    margin-block-end: 0;
+  }
+
+  &.gradient-box {
+    border: double 1px transparent;
+    border-radius: $stdrad;
+    background-image: linear-gradient(white, white),
+      radial-gradient(circle at top left, $primary, $secondary);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    h2 {
+      border-image-source: linear-gradient(45deg, $primary, $secondary);
+    }
+  }
+
+  &.reverse-gradient-box {
+    border: double 1px transparent;
+    border-radius: $stdrad;
+    background-image: linear-gradient(white, white),
+      radial-gradient(circle at top left, $secondary, $primary);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    h2 {
+      border-image-source: linear-gradient(45deg, $secondary, $primary);
+    }
+  }
+
+  .content {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 1.25em 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.card {
-		height: 200px;
-		
-		&.reverse-gradient-box {
-			margin-top: 1.5em;
-		}
-		
-		h2 {
-			word-break: break-word;
-			padding: 0 .4em .83em;
-		}
-	}
-	
-	.sites .animated .reverse-gradient-box {
-		margin-top: 1.5em;
-	}
+  .card {
+    height: auto;
+    
+    &.reverse-gradient-box {
+      margin-top: 1.5em;
+    }
+
+    h2 {
+      word-break: break-word;
+      padding: 0 0.4em 0.83em;
+    }
+  }
+
+  .sites .animated .reverse-gradient-box {
+    margin-top: 1.5em;
+  }
 }
 
 @media screen and (min-width: 480px) {
-    .card {
-        height: 100%;
-		
-		h2 {
-			padding: 0 1em .83em;
-			word-break: break-word;
-		}
+  .card {
+    height: 100%;
+
+    h2 {
+      padding: 0 1em 0.83em;
+      word-break: break-word;
     }
+  }
 }

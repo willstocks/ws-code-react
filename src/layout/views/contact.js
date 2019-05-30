@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function Contact() {
   return (
-        <div className="contact">
-			<h1>Contact</h1>
-		</div>
+    <div className="contact">
+      <h1>Contact</h1>
+    </div>
   );
 }
 

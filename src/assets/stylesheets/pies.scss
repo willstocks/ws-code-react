@@ -1,45 +1,56 @@
 @import "_variables";
 
 .chart {
-	flex: 1 1 100px;
-	margin: 0 2.5em;
-	
-	div{
-		max-height: 100px;
-		max-width: 100px;
-		text-align: center;
-		margin: auto;
-	}
-	
-	h3 {
-		text-align: center;
-		margin-top: 2em;
-	}
+  flex: 1 1 100px;
+  margin: 0 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
 
-	&:nth-child(even) {
-		path {
-			stroke: $primary;
-		}
-		text {
-			fill: $primary;
-		}
-	}
+  div {
+    max-height: 100px;
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+  }
 
+  h3 {
+    text-align: center;
+    margin-top: 1em;
+  }
 
-	
-	&:nth-child(odd) {
-		path {
-			stroke: $secondary;
-		}
-		text {
-			fill: $secondary;
-		}
-	}
+  &:nth-child(even) {
+    path {
+      stroke: $primary;
+    }
+    text {
+      fill: $primary;
+    }
+  }
 
+  &:nth-child(odd) {
+    path {
+      stroke: $secondary;
+    }
+    text {
+      fill: $secondary;
+    }
+  }
 }
 
 .charts h2 {
-    flex-basis: 100%;
-    margin-block-start: 0em;
-    margin-block-end: 1.5em;
+  flex-basis: 100%;
+  margin-block-start: 0em;
+  margin-block-end: 1.5em;
+}
+
+@media screen and (max-width: 360px) {
+  .chart {
+    width: 64px;
+  } 
+}
+
+@media screen and (max-width: 480px) and (min-width: 361px) {
+  .chart {
+    width: 115px;
+  } 
 }
