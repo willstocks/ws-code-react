@@ -2,8 +2,7 @@
 
 .chart {
   flex: 1 1 100px;
-  margin: 0 2.5em;
-  margin-bottom: 1em;
+  margin: 0 2.5em 1em;
   text-align: center;
 
   div {
@@ -46,11 +45,11 @@
 @media screen and (max-width: 360px) {
   .chart {
     width: 64px;
-  } 
+  }
 }
 
 @media screen and (max-width: 480px) and (min-width: 361px) {
   .chart {
     width: 115px;
-  } 
+  }
 }
