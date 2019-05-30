@@ -44,7 +44,7 @@ function Home() {
         <Timeline />
       </section>
       {/* timeline container */}
-      <InView threshold="0.5">
+      <InView threshold="0.5" triggerOnce>
         {({ inView, ref }) => (
           <div ref={ref}>
             <Pies inview={inView} />
