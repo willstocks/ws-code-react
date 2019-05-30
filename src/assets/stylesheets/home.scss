@@ -25,11 +25,17 @@
     right: 0;
     position: absolute;
     z-index: 0;
-    background-attachment: fixed;
     background-position: 100% 33%;
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(3px);
+    
+    @media screen and (max-width: 999px) {
+      background-attachment: scroll;
+    }
+    @media screen and (min-width: 1000px) {
+      background-attachment: fixed;
+    }
   }
 
   .content {
