@@ -44,13 +44,15 @@ function Home() {
         <Timeline />
       </section>
       {/* timeline container */}
-      <InView threshold="0.5" triggerOnce>
-        {({ inView, ref }) => (
-          <div ref={ref}>
-            <Pies inview={inView} />
-          </div>
-        )}
-      </InView>
+      <section className="container charts">
+        <InView threshold="0.5" triggerOnce>
+          {({ inView, ref }) => (
+            <div ref={ref}>
+              <Pies inview={inView} />
+            </div>
+          )}
+        </InView>
+      </section>
     </div>
   );
 }

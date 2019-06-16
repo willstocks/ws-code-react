@@ -1,5 +1,19 @@
 @import "_variables";
 
+.charts {
+  h2 {
+    flex-basis: 100%;
+    margin-block-start: 0em;
+    margin-block-end: 1.5em;
+  }
+
+  div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+}
+
 .chart {
   flex: 1 1 100px;
   margin: 0 2.5em 1em;
@@ -34,12 +48,6 @@
       fill: $secondary;
     }
   }
-}
-
-.charts h2 {
-  flex-basis: 100%;
-  margin-block-start: 0em;
-  margin-block-end: 1.5em;
 }
 
 @media screen and (max-width: 360px) {

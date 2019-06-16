@@ -4,7 +4,7 @@ import logo from "assets/images/logo.svg";
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="branding">
         <img src={logo} className="logo" alt="Logo" />
       </div>
@@ -20,7 +20,7 @@ function Navbar() {
         </NavLink>
       </div>
       <div className="comingsoon" />
-    </div>
+    </nav>
   );
 }
 

@@ -55,12 +55,12 @@ body {
     &:hover {
       opacity: 0.75;
     }
-  }
-}
 
-.link.active {
-  color: $primary;
-  text-decoration: underline;
+    &.active {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
 }
 
 .view {
@@ -70,12 +70,13 @@ body {
 footer {
   width: 100%;
   text-align: center;
-}
+  bottom: 0;
 
-.footer .logo {
-  height: 30px;
-  display: inline-block;
-  vertical-align: middle;
+  .logo {
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .copyright {
