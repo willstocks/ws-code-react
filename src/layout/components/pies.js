@@ -6,7 +6,7 @@ function Pies(props) {
   const pierender = props.inview ? 100 : 0;
 
   return (
-    <section className="container charts">
+    <>
       <h2>Skillset</h2>
       <div className="chart tea">
         <PieChart
@@ -123,7 +123,7 @@ function Pies(props) {
         <h3>PHP</h3>
       </div>
       {/* PHP Chart */}
-    </section>
+    </>
   );
 }
 
